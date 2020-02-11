@@ -4,15 +4,6 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 
-class Pairs {
-	int x;
-	int y;
-
-	Pairs(int x, int y) {
-		this.x = x;
-		this.y = y;
-	}
-}
 
 public class B4963_TheNumberOfIslands {
 	static int[][] check;
