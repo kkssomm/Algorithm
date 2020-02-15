@@ -1,4 +1,4 @@
-package kakao2019;
+package kakao2020;
 
 public class sol4 {
 	public static int[] solution(String[] words, String[] queries) {
