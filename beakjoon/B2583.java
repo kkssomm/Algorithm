@@ -1,4 +1,4 @@
-package beakjun;
+package beakjoon;
 
 public class B2583 {
 	static boolean[][] path;
@@ -6,7 +6,7 @@ public class B2583 {
 	public static void solution(int n, int m, int k, int[][] index) {
 		boolean[][] graph = new boolean[n][m];
 
-		// 1. »ç°¢Çü±×¸®±â
+		// 1. ï¿½ç°¢ï¿½ï¿½ï¿½×¸ï¿½ï¿½ï¿½
 		for (int l = 0; l < k; l++) {
 			for (int i = index[l][1]; i < index[l][3]; i++) {
 				for (int j = index[l][0]; j < index[l][2]; j++) {
@@ -21,7 +21,7 @@ public class B2583 {
 			System.out.println();
 		}
 
-		// 2. °¹¼ö ¼¼±â (graphÀÇ false ¿µ¿ª)
+		// 2. ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ (graphï¿½ï¿½ false ï¿½ï¿½ï¿½ï¿½)
 		int numberOfArea = 0;
 		int[] sizeOfArea = new int[n];
 		int a = 0;
@@ -46,7 +46,7 @@ public class B2583 {
 //		}
 	}
 
-	// 3. Å©±â ±¸ÇÏ±â
+	// 3. Å©ï¿½ï¿½ ï¿½ï¿½ï¿½Ï±ï¿½
 	public static int find(boolean[][] graph, int i, int j, boolean val) {
 		answer = 1;
 		System.out.println("i, j : " + i + ", " + j);
@@ -71,7 +71,7 @@ public class B2583 {
 		}
 		//System.out.println(answer);
 		return answer;
-		//Å»ÃâÁ¶°Ç(return 1)
+		//Å»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(return 1)
 	}
 
 	public static void main(String[] args) {

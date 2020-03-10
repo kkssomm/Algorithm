@@ -1,4 +1,4 @@
-package beakjun;
+package beakjoon;
 
 import java.util.Scanner;
 
@@ -12,9 +12,9 @@ public class B16637_ParenthesisAddition {
 	public static void dfs(int idx, int result) {
 		// System.out.println("idx"+idx+" res"+result);
 		
-		// ¿¬»êÀÚÀÇ ÀÎµ¦½º¸¦ ÃÊ°úÇÏ¸é Å»Ãâ
+		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Îµï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ê°ï¿½ï¿½Ï¸ï¿½ Å»ï¿½ï¿½
 		if(idx>=n/2) {
-			// ÃÖ´ñ°ªÀ» ¾÷µ¥ÀÌÆ®
+			// ï¿½Ö´ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®
 			if(answer<result) {
 				answer=result;
 			}
@@ -22,13 +22,13 @@ public class B16637_ParenthesisAddition {
 			return;
 		}
 		
-		// ¼øÂ÷Àû °è»ê
+		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
 		//System.out.println("1");
 		int ret = cal(result,operator[idx], operation[idx+1]);
 		dfs(idx+1, ret);
 		// System.out.println("idx"+idx);
 		
-		// ÀÎµ¦½º +2¿¡ ´ëÇÏ¿© °ýÈ£ °è»ê
+		// ï¿½Îµï¿½ï¿½ï¿½ +2ï¿½ï¿½ ï¿½ï¿½ï¿½Ï¿ï¿½ ï¿½ï¿½È£ ï¿½ï¿½ï¿½
 		if(idx+1<n/2) {
 			//System.out.println("2");
 			ret = cal(result,operator[idx],cal(operation[idx+1],operator[idx+1],operation[idx+2]));
@@ -57,7 +57,7 @@ public class B16637_ParenthesisAddition {
 		int idx1 = 0;
 		int idx2 = 0;
 		
-		// inputÀÇ ¿¬»êÀÚ, ÇÇ¿¬»êÀÚ¸¦ ³ª´©¾î ÀúÀå
+		// inputï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½, ï¿½Ç¿ï¿½ï¿½ï¿½ï¿½Ú¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 		String in = sc.next();
 		for(int i =0;i<in.length();i++) {
 			if(in.charAt(i)=='+'||in.charAt(i)=='-'||in.charAt(i)=='*') {

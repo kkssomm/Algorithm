@@ -1,4 +1,4 @@
-package beakjun;
+package beakjoon;
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -9,7 +9,7 @@ public class B4963_TheNumberOfIslands {
 	static int[][] check;
 	static int h;
 	static int w;
-	// 8°³ ¹æÇâ
+	// 8ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	static int[] dx = { 0, 0, 1, -1, 1, -1, 1, -1 };
 	static int[] dy = { -1, 1, 0, 0, -1, 1, 1, -1 };
 

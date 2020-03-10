@@ -1,4 +1,4 @@
-package beakjun;
+package beakjoon;
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -15,7 +15,7 @@ public class B7576_Tomato1 {
 
 		Queue<Pairs> q = new LinkedList<Pairs>();
 
-		// ÀÍ¾î ÀÖ´Â Åä¸¶Åä ÁÂÇ¥·Î Å¥ ÃÊ±âÈ­
+		// ï¿½Í¾ï¿½ ï¿½Ö´ï¿½ ï¿½ä¸¶ï¿½ï¿½ ï¿½ï¿½Ç¥ï¿½ï¿½ Å¥ ï¿½Ê±ï¿½È­
 		for (int i = 0; i < n; i++) {
 			for (int j = 0; j < m; j++) {
 				if (tomatos[i][j] == 1) {
@@ -24,10 +24,10 @@ public class B7576_Tomato1 {
 			}
 		}
 
-		// ´õ ÀÌ»ó ÀÍÈú Åä¸¶Åä°¡ ¾øÀ¸¸é Á¾·á
+		// ï¿½ï¿½ ï¿½Ì»ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ä¸¶ï¿½ä°¡ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 		while (!q.isEmpty()) {
 
-			// ´ÙÀ½ ³¯ ÀÍÀº Åä¸¶Åä ÁÂÇ¥¸¦ Å¥¿¡ Çª½Ã
+			// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ä¸¶ï¿½ï¿½ ï¿½ï¿½Ç¥ï¿½ï¿½ Å¥ï¿½ï¿½ Çªï¿½ï¿½
 			Pairs p = q.poll();
 			for (int i = 0; i < 4; i++) {
 				int nx = p.x + dx[i];
@@ -51,7 +51,7 @@ public class B7576_Tomato1 {
 //			System.out.println();
 		}
 
-		// Å¥¿¡ ÀúÀåµÈ ÃÖ´ë ÀÏ ¼ö ±¸ÇÏ±â
+		// Å¥ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ö´ï¿½ ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½Ï±ï¿½
 		int max = 0;
 		for (int i = 0; i < n; i++) {
 			for (int j = 0; j < m; j++) {

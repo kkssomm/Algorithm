@@ -1,12 +1,12 @@
-package beakjun;
-// n/x ¹ø¿øÆÇ µ¹¸®±â -> rotate + delete - > t¹ø ¹Ýº¹
+package beakjoon;
+// n/x ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ -> rotate + delete - > tï¿½ï¿½ ï¿½Ýºï¿½
 public class B17822_PlateSpinning {
 	public static int solution(int n, int m, int t, int[][] plates, int x, int d, int k) {
 		int answer = 0;
 		
-		// t¹ø ¹Ýº¹
+		// tï¿½ï¿½ ï¿½Ýºï¿½
 		for(int i=1;i<=t;i++) {
-			// j¹øÂ° ¿øÆÇ µ¹¸®±â
+			// jï¿½ï¿½Â° ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 			for(int j=x;j<=n;) {
 				System.out.println(j);
 				j=j*x;

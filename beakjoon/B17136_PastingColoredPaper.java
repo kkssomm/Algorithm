@@ -1,22 +1,22 @@
-package beakjun;
+package beakjoon;
 
 import java.util.Scanner;
 
 public class B17136_PastingColoredPaper {
 	static int answer = 0;
-	static int[] coloredPaper = { 0, 5, 5, 5, 5 }; // »öÁ¾ÀÌÀÇ ¼ö
+	static int[] coloredPaper = { 0, 5, 5, 5, 5 }; // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½
 	static boolean check[];
 
 	public static void dfs(int x, int y, int count, int[][] paper) {
-		if (x == 9 && y == 9) { // ³¡±îÁö Å½»ö
+		if (x == 9 && y == 9) { // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Å½ï¿½ï¿½
 			answer = Math.min(answer, count);
 			return;
 		}
 		if (answer <= count)
 			return;
 
-		if (x == 0 && y == 0) { // ½ÃÀÛ
-			for (int i = 5; i > 0; i--) { // Å©±â°¡ Å« ¼ø¼­·Î
+		if (x == 0 && y == 0) { // ï¿½ï¿½ï¿½ï¿½
+			for (int i = 5; i > 0; i--) { // Å©ï¿½â°¡ Å« ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 				if (coloredPaper[i] > 0) { 
 					if (check(x, y, i)) {
 						fill(x, y, i, 0);

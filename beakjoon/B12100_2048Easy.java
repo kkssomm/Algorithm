@@ -1,4 +1,4 @@
-package beakjun;
+package beakjoon;
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -12,7 +12,7 @@ public class B12100_2048Easy {
 	static int[][] board;
 	
 	public static int dfs(int depth, int dir) {
-		// ÀÌµ¿½ÃÅ² ÈÄ ÃÖ´ñ°ª ÃßÃâ
+		// ï¿½Ìµï¿½ï¿½ï¿½Å² ï¿½ï¿½ ï¿½Ö´ï¿½ ï¿½ï¿½ï¿½ï¿½
 		if(depth==5) {
 			int max=0;
 			for(int i =0;i<n;i++) {
@@ -23,7 +23,7 @@ public class B12100_2048Easy {
 			return max;
 		}
 		
-		// ÀÌµ¿
+		// ï¿½Ìµï¿½
 		int[][] map = board;
 		int num = 0;
 		
@@ -36,7 +36,7 @@ public class B12100_2048Easy {
 		return num;
 	}
 	
-	// ÀÌµ¿½ÃÅ°´Â ÇÔ¼ö
+	// ï¿½Ìµï¿½ï¿½ï¿½Å°ï¿½ï¿½ ï¿½Ô¼ï¿½
 	public static void shift(int dir) {
 		Queue q = new LinkedList();
 

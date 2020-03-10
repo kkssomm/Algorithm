@@ -1,4 +1,4 @@
-package beakjun;
+package beakjoon;
 
 public class Pairs {
 	int x;

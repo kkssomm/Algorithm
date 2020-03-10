@@ -1,4 +1,4 @@
-package beakjun;
+package beakjoon;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -24,11 +24,11 @@ public class B1912_ContinuousSum {
 
 		dp[0] = nums[0];
 		for (int i = 1; i < n; i++) {
-			// ÀÌÀü °ª°ú ÇöÀç °ªÀÇ ÇÕ
+			// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½
 			if (dp[i - 1] + nums[i] > nums[i]) {
 				dp[i] = dp[i - 1] + nums[i];
 			}
-			// ÇöÀç °ª -> ¿¬¼ÓÇÕ »õ·Î ½ÃÀÛ
+			// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ -> ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 			else {
 				dp[i] = nums[i];
 			}
