@@ -1,4 +1,4 @@
-package kakao2018;
+package kakao2019;
 
 import java.util.HashMap;
 
@@ -30,10 +30,10 @@ public class openChat {
 	        for(int i=0;i<record.length;i++) {
 	        	String[] temp = record[i].split(" ");
 	        	if(temp[0].equals("Enter")) {
-	        		answer[index++] = h.get(temp[1])+"´ÔÀÌ µé¾î¿Ô½À´Ï´Ù.";
+	        		answer[index++] = h.get(temp[1])+"ë‹˜ì´ ë“¤ì–´ì™”ìŠµë‹ˆë‹¤.";
 	        	}
 	        	else if(temp[0].equals("Leave")) {
-	        		answer[index++] = h.get(temp[1])+"´ÔÀÌ ³ª°¬½À´Ï´Ù.";
+	        		answer[index++] = h.get(temp[1])+"ë‹˜ì´ ë‚˜ê°”ìŠµë‹ˆë‹¤.";
 	        	}
 	        }
 	        
