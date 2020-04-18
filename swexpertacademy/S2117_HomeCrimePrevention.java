@@ -8,8 +8,8 @@ public class S2117_HomeCrimePrevention {
 	static int[][] city;
 
 	public static void solution(int x, int y) {
-		// k가 최대 n*n 칸을 모두 채우는 범위까지 진행
-		for(int k=0;k<n+2;k++) {
+		// {1} 모든 칸에 대해 k가 최대 n*n 칸을 모두 채우는 범위까지 진행
+		for(int k=1;k<n+2;k++) {
 			int count = 0;
 			
 			for(int i=0;i<n;i++) {
@@ -17,7 +17,7 @@ public class S2117_HomeCrimePrevention {
 					int nx = Math.abs(i-x);
 					int ny = Math.abs(j-y);
 					
-					// 집의 수를 count
+					// {2} k = |i-x| + |j-y| 일때 서비스 영역이므로, 포함되는 집의 수를 count
 					if(nx+ny<k && city[i][j] ==1) {
 						count++;
 					}
@@ -26,7 +26,7 @@ public class S2117_HomeCrimePrevention {
 			
 			int profit = (count*m) -(k*k+(k-1)*(k-1));
 			if(profit<0) continue;
-			// 손해를 보지 않는 경우, 최대 집의 수 업데이트
+			// {3} 손해를 보지 않는 경우 최대 집의 수 업데이트
 			else {
 				max = Math.max(count, max);
 			}
