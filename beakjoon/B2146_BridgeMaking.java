@@ -1,11 +1,8 @@
 package beakjoon;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.LinkedList;
 import java.util.Queue;
-import java.util.StringTokenizer;
+import java.util.Scanner;
 
 public class B2146_BridgeMaking {
 	 
@@ -18,18 +15,17 @@ public class B2146_BridgeMaking {
     static int mark = 2;
     static int min = Integer.MAX_VALUE;
     
-    public static void main (String[] args) throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    public static void main (String[] args)  {
+        Scanner sc = new Scanner(System.in);
         
-        N = Integer.parseInt(br.readLine());
+        N = sc.nextInt();
         
         map = new int[N][N];
         visited = new boolean[N][N];
         
         for (int i = 0; i < N; i++) {
-            StringTokenizer st = new StringTokenizer(br.readLine());
             for (int j = 0; j < N; j++) {
-                map[i][j] = Integer.parseInt(st.nextToken());
+                map[i][j] = sc.nextInt();
             }
         }
         
@@ -76,7 +72,7 @@ public class B2146_BridgeMaking {
             }
         }
         System.out.println(min);
-        
+        sc.close();
     }
     
     static boolean isEdge(int x, int y) {
